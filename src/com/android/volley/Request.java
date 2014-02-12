@@ -16,7 +16,6 @@
 
 package com.android.volley;
 
-import android.net.TrafficStats;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Looper;
@@ -69,7 +68,7 @@ public abstract class Request<T> implements Comparable<Request<T>> {
     /** URL of this request. */
     private final String mUrl;
 
-    /** Default tag for {@link TrafficStats}. */
+    /** Default tag for TrafficStats */
     private final int mDefaultTrafficStatsTag;
 
     /** Listener interface for errors. */
@@ -160,7 +159,7 @@ public abstract class Request<T> implements Comparable<Request<T>> {
     }
 
     /**
-     * @return A tag for use with {@link TrafficStats#setThreadStatsTag(int)}
+     * @return A tag for use with  TrafficStats#setThreadStatsTag(int)
      */
     public int getTrafficStatsTag() {
         return mDefaultTrafficStatsTag;
